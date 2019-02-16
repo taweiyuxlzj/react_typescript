@@ -73,23 +73,23 @@ npm link webpack
 例如现在配置的webpack.common.config.js是针对开发环境
 
 #对于版本迭代更新问题#
-可以使用
+**可以使用**
 npm-check-updates  
-*全局安装 *  
+**全局安装**  
 npm install npm-check-updates -g 
-*检查depedencies中的最新版本*  
+**检查depedencies中的最新版本**  
 npm-check-updates    
-*更新dependencies到最新版本*  
+**更新dependencies到最新版本**  
 ncu -u  
-*如果想更新全部depedencies到最新版本（包括当前指定版本范围满足最新版本号）*  
+**如果想更新全部depedencies到最新版本（包括当前指定版本范围满足最新版本号)** 
 ncu -a  
-*由于国内墙问题。 在使用npm-check-updates速度很慢,可使用*  
-*//将当前NPM检查环境变量设置为CNPM,这个方法只针对当前会话,下次启动不会修改*  
+**由于国内墙问题。 在使用npm-check-updates速度很慢,可使用** 
+**将当前NPM检查环境变量设置为CNPM,这个方法只针对当前会话,下次启动不会修改**  
 set NPM_CHECK_INSTALLER=cnpm  
-*package.json "nc-u":"set NPM_CHECK_INSTALLER=cnpm&& npm-check -u" //执行升级  添加到项目环境中,便于直接升级*  
+**package.json "nc-u":"set NPM_CHECK_INSTALLER=cnpm&& npm-check -u" //执行升级  添加到项目环境中,便于直接升级**  
 
 #结合BootStrap  React开发#
-*安装 file-loader url-loader*
+**安装 file-loader url-loader**
 npm install file-loader url url-loader --save-dev
 
 #安装Grunt#
