@@ -1,4 +1,4 @@
-#目录结构#  
+符#目录结构#  
 dist **打包后存放文件目录**  
 node_modules **项目运行所需要的nodejs模块**  
 src **代码目录**  
@@ -73,7 +73,7 @@ npm link webpack
 例如现在配置的webpack.common.config.js是针对开发环境
 
 #对于版本迭代更新问题#
-*可以使用*  
+可以使用
 npm-check-updates  
 *全局安装 *  
 npm install npm-check-updates -g 
@@ -87,7 +87,6 @@ ncu -a
 *//将当前NPM检查环境变量设置为CNPM,这个方法只针对当前会话,下次启动不会修改*  
 set NPM_CHECK_INSTALLER=cnpm  
 *package.json "nc-u":"set NPM_CHECK_INSTALLER=cnpm&& npm-check -u" //执行升级  添加到项目环境中,便于直接升级*  
----------------------  
 
 #结合BootStrap  React开发#
 *安装 file-loader url-loader*
