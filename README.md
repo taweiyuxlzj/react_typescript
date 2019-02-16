@@ -1,4 +1,4 @@
-#目录结构
+#目录结构#
 dist **打包后存放文件目录**
 node_modules **项目运行所需要的nodejs模块**
 src **代码目录**
@@ -11,7 +11,7 @@ webpack.common.config.js **webpack通用配置js**
 webpack.dev.config.js **webpack开发环境下配置js**
 
 
-#命令执行顺序
+#命令执行顺序#
 **创建并进入项目**
 mkdir demo && cd demo  
 
@@ -68,11 +68,11 @@ npm link webpack
 *include：需要编译的目录。*
 
 
-#对于配置webpack
+#对于配置webpack#
 由于我们需要配置的是开发环境,所以对应的webpack.config.js文件可以根据需要的环境配置不同的js文件。  
 例如现在配置的webpack.common.config.js是针对开发环境
 
-#对于版本迭代更新问题。
+#对于版本迭代更新问题。#
 *可以使用*
 npm-check-updates
 *全局安装 *
@@ -89,13 +89,13 @@ set NPM_CHECK_INSTALLER=cnpm
 *package.json "nc-u":"set NPM_CHECK_INSTALLER=cnpm&& npm-check -u" //执行升级  添加到项目环境中,便于直接升级*
 --------------------- 
 
-#结合BootStrap  React开发
+#结合BootStrap  React开发#
 *安装 file-loader url-loader*
 npm install file-loader url url-loader --save-dev
 
-#安装Grunt 
+#安装Grunt#
 npm install -g grunt-cli
 
-#快速删除node_models
+#快速删除node_models#
 cnpm install rimraf -g
 rimraf node_modules
