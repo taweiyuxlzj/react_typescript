@@ -1,31 +1,31 @@
 #目录结构#  
-dist **打包后存放文件目录**
-node_modules **项目运行所需要的nodejs模块**
-src **代码目录**
-  components **组件**
-index.html **启动html**
-package.json **项目包和基础配置**
-README.md  **项目文件了解信息**
-tsconfig.json **Typescript配置**
-webpack.common.config.js **webpack通用配置js**
-webpack.dev.config.js **webpack开发环境下配置js**
+dist **打包后存放文件目录**  
+node_modules **项目运行所需要的nodejs模块**  
+src **代码目录**  
+  components **组件**  
+index.html **启动html**  
+package.json **项目包和基础配置**  
+README.md  **项目文件了解信息**  
+tsconfig.json **Typescript配置**  
+webpack.common.config.js **webpack通用配置js**  
+webpack.dev.config.js **webpack开发环境下配置js**  
+  
+  
+#命令执行顺序#  
+**创建并进入项目**  
+mkdir demo && cd demo    
 
+**初始化项目**  
+npm init  
 
-#命令执行顺序#
-**创建并进入项目**
-mkdir demo && cd demo  
+**安装webpack和webpack-dev-server(全局安装过的忽略)**  
+npm i -D webpack@3.6.0   
 
-**初始化项目**
-npm init 
-
-**安装webpack和webpack-dev-server(全局安装过的忽略)**
-npm i -D webpack@3.6.0 
-
-**安装React和Types中的React声明文件,@types开头的包都是typescript声明文件，可以进入node_modules/@types/XX/index.d.ts**
-**[声明文件的具体介绍](https://github.com/DefinitelyTyped/DefinitelyTyped)**
+**安装React和Types中的React声明文件,@types开头的包都是typescript声明文件，可以进入node_modules/@types/XX/index.d.ts**  
+**[声明文件的具体介绍](https://github.com/DefinitelyTyped/DefinitelyTyped)**  
 npm i --S react@15.5.4 react-dom@15.5.4 @types/react@15.6.0 @types/react-dom@15.5.0  
 
-**安装TypeScript,ts-loader和source-map-loader**
+**安装TypeScript,ts-loader和source-map-loader**  
 **source-map-loader使用任意来自Typescript的sourcemap输出，以此通知webpack何时生成自己的sourcemaps。 这让你在调试最终生成的文件时就好像在调试TypeScript源码一样。**
 npm i -D typescript@2.5.3 ts-loader@2.3.7 source-map-loader@0.2.2
 
